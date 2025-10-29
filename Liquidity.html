@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NeuroGuard — Liquidity Lock & Analytics</title>
+  <meta name="description" content="Official NeuroGuard ($NRG) liquidity, pool analytics, and verification links." />
+  <link rel="canonical" href="liquidity.html" />
+  <style>
+    :root{
+      --bg:#f7f8fa; --panel:#ffffff; --ink:#1f2937; --muted:#6b7280;
+      --line:#e5e7eb; --brand:#0ea5e9; --brand-ink:#0b74a6; --ok:#16a34a; --warn:#ea580c;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      --sans: ui-sans-serif, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; background:var(--bg); color:var(--ink); font:16px/1.55 var(--sans);
+      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    }
+    .wrap{max-width:1060px; margin:auto; padding:40px 20px}
+    header{display:flex; align-items:center; gap:16px; margin-bottom:28px}
+    header .logo{
+      width:44px; height:44px; border-radius:10px; background:#e0f2fe; display:grid; place-items:center; font-weight:800; color:var(--brand-ink);
+    }
+    h1{font-size:28px; margin:0}
+    .subtitle{color:var(--muted); margin-top:6px}
+    .grid{display:grid; gap:16px}
+    @media(min-width:860px){ .grid{grid-template-columns:1.1fr 1fr} }
+    .card{
+      background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:20px;
+      box-shadow:0 1px 0 rgba(0,0,0,.02);
+    }
+    .card h2{font-size:18px; margin:0 0 12px}
+    .kv{display:grid; grid-template-columns:180px 1fr; gap:8px 18px; margin-top:8px}
+    .kv div{padding:6px 0; border-bottom:1px dashed var(--line)}
+    .mono{font-family:var(--mono)}
+    .pill{display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border:1px solid var(--line); border-radius:999px; background:#fafafa}
+    .btns{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px}
+    .btn{
+      display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:10px; text-decoration:none; border:1px solid var(--brand);
+      color:#fff; background:var(--brand); font-weight:600;
+    }
+    .btn.alt{background:#fff; color:var(--brand-ink); border-color:var(--line)}
+    .notice{font-size:13px; color:var(--muted); margin-top:10px}
+    .rows{display:grid; gap:10px}
+    .row{display:flex; justify-content:space-between; align-items:center; padding:10px 12px; border:1px solid var(--line); border-radius:10px; background:#fff}
+    .row strong{font-variant-numeric:tabular-nums}
+    .ok{color:var(--ok)} .warn{color:var(--warn)}
+    footer{margin-top:26px; color:var(--muted); font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">NRG</div>
+      <div>
+        <h1>Liquidity Lock & Analytics</h1>
+        <div class="subtitle">Official pool information for <strong>NeuroGuard ($NRG)</strong> on BNB Smart Chain.</div>
+      </div>
+    </header>
+
+    <section class="grid">
+      <!-- Pool / Contract -->
+      <div class="card">
+        <h2>Pool & Contract</h2>
+        <div class="kv">
+          <div>Network</div><div>BNB Smart Chain (BEP-20)</div>
+          <div>Pair</div><div>NRG / WBNB (v2)</div>
+          <div>Pair Address</div><div class="mono">0x950ebbFb429b54113a04d898BcE76876EC8a40B9</div>
+          <div>Current TVL (est.)</div><div>≈ <strong>$1,114.57</strong></div>
+          <div>Your LP Balance</div><div><strong>500.04989</strong> Cake-LP (from add-liquidity)</div>
+        </div>
+        <div class="btns">
+          <a class="btn" href="https://bscscan.com/address/0x950ebbFb429b54113a04d898BcE76876EC8a40B9" target="_blank" rel="noopener">View on BscScan</a>
+          <a class="btn alt" href="https://pancakeswap.finance/info/pools" target="_blank" rel="noopener">Open in PancakeSwap</a>
+        </div>
+        <div class="notice">Figures above are indicative snapshots. Always verify on-chain.</div>
+      </div>
+
+      <!-- Liquidity Snapshot -->
+      <div class="card">
+        <h2>Liquidity Snapshot</h2>
+        <div class="rows">
+          <div class="row"><span>NRG supplied</span><strong>500,000 NRG</strong></div>
+          <div class="row"><span>WBNB supplied</span><strong>0.500099 WBNB</strong></div>
+          <div class="row"><span>Pool fee tier</span><strong>0.25%</strong></div>
+          <div class="row"><span>Status</span><strong class="ok">Active</strong></div>
+        </div>
+        <div class="notice">Adding or removing liquidity changes pool depth and price impact.</div>
+      </div>
+    </section>
+
+    <!-- Distribution -->
+    <section class="card" style="margin-top:16px;">
+      <h2>Token Distribution (Public Allocation)</h2>
+      <div class="rows">
+        <div class="row"><span>Initial Public Float</span><strong>500,000 NRG</strong></div>
+        <div class="row"><span>Total Supply</span><strong>1,000,000,000 NRG</strong></div>
+        <div class="row"><span>Liquidity Policy</span><strong>Locked & growing over time</strong></div>
+      </div>
+      <div class="notice">No commitments are implied. All plans are indicative and may change.</div>
+    </section>
+
+    <!-- Helpful Links -->
+    <section class="card" style="margin-top:16px;">
+      <h2>Official Links</h2>
+      <div class="btns">
+        <a class="btn alt" href="https://discord.gg/P4392ZEEG" target="_blank" rel="noopener">Discord</a>
+        <a class="btn alt" href="https://twitter.com/NeuroGuradAI" target="_blank" rel="noopener">Twitter</a>
+        <a class="btn alt" href="index.html">Back to Launch Page</a>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 NeuroGuard • This page is provided for transparency only. Nothing here is financial advice.
+    </footer>
+  </div>
+</body>
+</html>
